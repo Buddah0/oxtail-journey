@@ -77,7 +77,7 @@
     "id": "diaspora",
     "kind": "stop",
     "title": "The Caribbean diaspora carries it north",
-    "pov": { "lat": 24, "lng": -70, "altitude": 1.5 },
+    "pov": { "lat": 12, "lng": -68, "altitude": 2.2 },
     "autoRotate": false,
     "countries": ["Jamaica", "Guyana"],
     "rings": [
@@ -133,7 +133,7 @@
     "id": "fork",
     "kind": "stop",
     "title": "Your fork",
-    "pov": { "lat": 40.77, "lng": -74.2, "altitude": 0.45 },
+    "pov": { "lat": 40.77, "lng": -74.2, "altitude": 0.8 },
     "autoRotate": false,
     "countries": [],
     "rings": [{ "lat": 40.7673, "lng": -74.2049, "label": "East Orange, NJ" }],
