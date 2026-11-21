@@ -1,5 +1,7 @@
 import './style.css';
 import Globe from 'globe.gl';
+import { feature } from 'topojson-client';
+import worldTopo from 'world-atlas/countries-110m.json';
 
 // BASE_URL keeps texture paths correct when the site is later served from a sub-path (GitHub Pages).
 const BASE = import.meta.env.BASE_URL;
@@ -27,5 +29,23 @@ window.addEventListener('resize', () => {
   globe.width(window.innerWidth).height(window.innerHeight);
 });
 
-// Test hook for the dev server only; not included in the production build.
-if (import.meta.env.DEV) window.__globe = globe;
+// ---------- Countries + light-up ----------
+const countries = feature(worldTopo, worldTopo.objects.countries).features;
+let lit = new Set();
+const isLit = (d) => lit.has(d.properties.name);
+
+globe.polygonsData(countries).polygonsTransitionDuration(800);
+
+// Fresh accessor functions make Globe.gl re-evaluate every polygon.
+function highlight(names = []) {
+  lit = new Set(names);
+  globe
+    .polygonCapColor((d) => (isLit(d) ? 'rgba(255, 179, 71, 0.55)' : 'rgba(0, 0, 0, 0)'))
+    .polygonSideColor((d) => (isLit(d) ? 'rgba(181, 69, 43, 0.45)' : 'rgba(0, 0, 0, 0)'))
+    .polygonStrokeColor((d) => (isLit(d) ? '#ffd28a' : 'rgba(255, 200, 140, 0.12)'))
+    .polygonAltitude((d) => (isLit(d) ? 0.06 : 0.006));
+}
+highlight();
+
+// Test hooks for the dev server only; not included in the production build.
+if (import.meta.env.DEV) Object.assign(window, { __globe: globe, __highlight: highlight });
