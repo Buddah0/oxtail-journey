@@ -27,6 +27,57 @@ html, body {
 }
 .globe--dim { opacity: 0.35; }
 
+/* ---------- Globe labels ---------- */
+.globe-label {
+  position: relative;
+  width: 0;
+  height: 0;
+  pointer-events: none;
+}
+.globe-label__text {
+  position: absolute;
+  top: 0;
+  white-space: nowrap;
+  transform: translateY(-50%);
+  color: var(--ink);
+  text-shadow: 0 0 3px #000, 0 0 8px #000;
+  animation: label-in 0.6s ease 0.9s both; /* appear as the camera arrives */
+}
+.globe-label--country {
+  font-size: 0.78rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #ffd28a;
+}
+.globe-label--place { font-size: 0.85rem; }
+
+/* alignment around the anchor point */
+.globe-label--center { left: 0; transform: translate(-50%, -50%); }
+.globe-label--right { left: 0; padding-left: 10px; }
+.globe-label--left { right: 0; padding-right: 10px; }
+
+/* place labels get a dot exactly on the anchor */
+.globe-label--place::before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--amber);
+  box-shadow: 0 0 6px var(--amber);
+  transform: translate(-50%, -50%);
+}
+.globe-label--place.globe-label--right::before { left: 0; }
+.globe-label--place.globe-label--left::before { right: 0; transform: translate(50%, -50%); }
+.globe-label--place.globe-label--right { padding-left: 12px; }
+.globe-label--place.globe-label--left { padding-right: 12px; }
+
+@keyframes label-in {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
 /* ---------- Top bar ---------- */
 .topbar {
   position: fixed;

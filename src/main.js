@@ -68,6 +68,28 @@ function setMarkers({ rings = [], arcs = [] } = {}) {
   globe.ringsData(rings).arcsData(arcs);
 }
 
+// ---------- Place labels (names of what's lit up) ----------
+// Each label is a 0-size anchor pinned to its lat/lng; the text sits left, right or centered on it.
+// Globe.gl hides labels automatically while they're behind the globe.
+globe
+  .htmlTransitionDuration(0)
+  .htmlAltitude((d) => (d.kind === 'country' ? 0.07 : 0.012))
+  .htmlElement((d) => {
+    const anchor = document.createElement('div');
+    anchor.className = 'globe-label';
+    const text = document.createElement('div');
+    const align = d.align || (d.kind === 'place' ? 'right' : 'center');
+    text.className = `globe-label__text globe-label--${d.kind} globe-label--${align}`;
+    text.textContent = d.text;
+    anchor.appendChild(text);
+    return anchor;
+  });
+
+// labels: [{ text, lat, lng, kind: 'country' | 'place', align?: 'left' | 'right' | 'center' }]
+function setLabels(labels = []) {
+  globe.htmlElementsData(labels);
+}
+
 // ---------- Info card ----------
 const els = {
   card: document.getElementById('card'),
@@ -127,6 +149,7 @@ function applyGlobe(stop, ms = FLY_MS) {
   controls.autoRotate = Boolean(stop.autoRotate);
   highlight(stop.countries);
   setMarkers(stop);
+  setLabels(stop.labels);
   globe.pointOfView(stop.pov, ms);
   globeEl.classList.toggle('globe--dim', stop.kind === 'works-cited');
 }

@@ -15,6 +15,12 @@
     "kind": "stop",
     "title": "The Farm: where it starts",
     "pov": { "lat": 38, "lng": -97, "altitude": 1.7 },
+    "labels": [
+      { "text": "United States", "lat": 44.5, "lng": -108, "kind": "country" },
+      { "text": "Texas", "lat": 31.0, "lng": -99.0, "kind": "place", "align": "right" },
+      { "text": "Nebraska", "lat": 41.5, "lng": -99.8, "kind": "place", "align": "right" },
+      { "text": "Kansas", "lat": 38.5, "lng": -98.4, "kind": "place", "align": "right" }
+    ],
     "autoRotate": false,
     "countries": ["United States of America"],
     "rings": [
@@ -34,6 +40,10 @@
     "kind": "stop",
     "title": "The Kill Floor: the “fifth quarter”",
     "pov": { "lat": 41.6, "lng": -93.6, "altitude": 1.0 },
+    "labels": [
+      { "text": "United States", "lat": 44.5, "lng": -108, "kind": "country" },
+      { "text": "Des Moines, Iowa", "lat": 41.5868, "lng": -93.625, "kind": "place", "align": "right" }
+    ],
     "autoRotate": false,
     "countries": ["United States of America"],
     "rings": [{ "lat": 41.5868, "lng": -93.625, "label": "Des Moines, IA (USDA Market News)" }],
@@ -49,6 +59,9 @@
     "kind": "stop",
     "title": "South Africa: oxtail on the shelf",
     "pov": { "lat": -29, "lng": 24, "altitude": 1.6 },
+    "labels": [
+      { "text": "South Africa", "lat": -30.56, "lng": 22.94, "kind": "country" }
+    ],
     "autoRotate": false,
     "countries": ["South Africa"],
     "rings": [],
@@ -63,6 +76,15 @@
     "kind": "stop",
     "title": "One cut, many kitchens",
     "pov": { "lat": 25, "lng": -30, "altitude": 2.6 },
+    "labels": [
+      { "text": "United States", "lat": 39.5, "lng": -98.35, "kind": "country" },
+      { "text": "Mexico", "lat": 23.6, "lng": -102.5, "kind": "country" },
+      { "text": "Cuba", "lat": 22.6, "lng": -79.5, "kind": "country", "align": "left" },
+      { "text": "Jamaica", "lat": 18.11, "lng": -77.3, "kind": "country", "align": "right" },
+      { "text": "France", "lat": 46.6, "lng": 2.2, "kind": "country" },
+      { "text": "China", "lat": 35.86, "lng": 104.2, "kind": "country" },
+      { "text": "Vietnam", "lat": 14.06, "lng": 108.28, "kind": "country" }
+    ],
     "autoRotate": true,
     "countries": ["Cuba", "France", "Jamaica", "Vietnam", "China", "Mexico", "United States of America"],
     "rings": [],
@@ -78,6 +100,12 @@
     "kind": "stop",
     "title": "The Caribbean diaspora carries it north",
     "pov": { "lat": 12, "lng": -68, "altitude": 2.2 },
+    "labels": [
+      { "text": "Jamaica", "lat": 18.11, "lng": -77.3, "kind": "country", "align": "left" },
+      { "text": "Guyana", "lat": 4.86, "lng": -58.93, "kind": "country", "align": "right" },
+      { "text": "Brooklyn, NY", "lat": 40.6782, "lng": -73.9442, "kind": "place", "align": "right" },
+      { "text": "East Orange, NJ", "lat": 40.7673, "lng": -74.2049, "kind": "place", "align": "left" }
+    ],
     "autoRotate": false,
     "countries": ["Jamaica", "Guyana"],
     "rings": [
@@ -100,6 +128,11 @@
     "kind": "stop",
     "title": "From scrap to splurge: the price story",
     "pov": { "lat": 46, "lng": -38, "altitude": 2.1 },
+    "labels": [
+      { "text": "United States", "lat": 39.5, "lng": -98.35, "kind": "country" },
+      { "text": "New York City", "lat": 40.7128, "lng": -74.006, "kind": "place", "align": "right" },
+      { "text": "United Kingdom", "lat": 54.0, "lng": -2.0, "kind": "country" }
+    ],
     "autoRotate": false,
     "countries": ["United States of America", "United Kingdom"],
     "rings": [
@@ -134,6 +167,9 @@
     "kind": "stop",
     "title": "Your fork",
     "pov": { "lat": 40.77, "lng": -74.2, "altitude": 0.8 },
+    "labels": [
+      { "text": "East Orange, NJ", "lat": 40.7673, "lng": -74.2049, "kind": "place", "align": "right" }
+    ],
     "autoRotate": false,
     "countries": [],
     "rings": [{ "lat": 40.7673, "lng": -74.2049, "label": "East Orange, NJ" }],
