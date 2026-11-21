@@ -175,14 +175,10 @@ html, body {
 .facts li::marker { color: var(--oxtail); }
 .facts strong { color: #ffd28a; font-weight: normal; }
 .cite { color: var(--muted); font-size: 0.9em; white-space: nowrap; }
-.placeholder {
-  list-style: none;
-  margin-left: -1.1em;
-  padding: 10px 12px;
-  border: 1px dashed var(--oxtail);
-  border-radius: 8px;
-  color: var(--muted);
-  font-style: italic;
+.story {
+  margin: 12px 0 0;
+  padding-top: 12px;
+  border-top: 1px solid var(--line);
 }
 
 /* MLA-style hanging indent */

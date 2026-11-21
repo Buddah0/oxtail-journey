@@ -118,13 +118,12 @@ function cardHtml(stop) {
     return `<ul class="works-cited">${stop.entries.map((e) => `<li>${format(e)}</li>`).join('')}</ul>
       <p class="credit">${format(stop.credit)}</p>`;
   }
-  return `<ul class="facts">${stop.bullets
-    .map((b) =>
-      b.placeholder
-        ? `<li class="placeholder">${format(b.text)}</li>`
-        : `<li>${format(b.text)} <span class="cite">${escapeHtml(b.cite)}</span></li>`,
-    )
-    .join('')}</ul>`;
+  const facts = stop.bullets
+    .map((b) => `<li>${format(b.text)} <span class="cite">${escapeHtml(b.cite)}</span></li>`)
+    .join('');
+  // stop.story: the author's own words (no citation needed), shown under the cited facts
+  const story = stop.story ? `<p class="story">${format(stop.story)}</p>` : '';
+  return `<ul class="facts">${facts}</ul>${story}`;
 }
 
 function progressText(stop, i) {
