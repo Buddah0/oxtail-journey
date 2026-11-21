@@ -47,5 +47,22 @@ function highlight(names = []) {
 }
 highlight();
 
+// ---------- Rings (pulsing city markers) + arcs (migration routes) ----------
+globe
+  .ringColor(() => (t) => `rgba(255, 179, 71, ${1 - t})`)
+  .ringMaxRadius(3)
+  .ringPropagationSpeed(2)
+  .ringRepeatPeriod(900)
+  .arcColor(() => ['rgba(255, 179, 71, 0.15)', '#ffb347'])
+  .arcStroke(0.6)
+  .arcDashLength(0.4)
+  .arcDashGap(0.2)
+  .arcDashAnimateTime(2200);
+
+// rings: [{ lat, lng }]  arcs: [{ startLat, startLng, endLat, endLng }]
+function setMarkers({ rings = [], arcs = [] } = {}) {
+  globe.ringsData(rings).arcsData(arcs);
+}
+
 // Test hooks for the dev server only; not included in the production build.
-if (import.meta.env.DEV) Object.assign(window, { __globe: globe, __highlight: highlight });
+if (import.meta.env.DEV) Object.assign(window, { __globe: globe, __highlight: highlight, __setMarkers: setMarkers });
