@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>An Oxtail's Journey</title>
+  </head>
+  <body>
+    <header class="topbar">
+      <h1 class="brand">An Oxtail's Journey</h1>
+      <p class="progress" id="progress"></p>
+    </header>
+
+    <div id="globe" class="globe" aria-hidden="true"></div>
+
+    <button class="nav nav--prev" id="prev" type="button" aria-label="Previous stop">‹</button>
+    <button class="nav nav--next" id="next" type="button" aria-label="Next stop">›</button>
+
+    <main class="card" id="card">
+      <h2 class="card__title" id="title" aria-live="polite"></h2>
+      <div class="card__body" id="body"></div>
+    </main>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
