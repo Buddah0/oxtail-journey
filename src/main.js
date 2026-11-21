@@ -23,11 +23,13 @@ const controls = globe.controls();
 controls.autoRotateSpeed = 0.35;
 controls.enableZoom = false; // the story controls the zoom; visitors can still drag to rotate
 
-// Fill the window and lift the globe so the info card sits under it.
+// Fill the window and lift the globe so the info card sits under it
+// (lifted further on phones, where the card is a taller bottom sheet).
+const phone = window.matchMedia('(max-width: 640px)');
 function fitGlobe() {
   const w = window.innerWidth;
   const h = window.innerHeight;
-  globe.width(w).height(h).globeOffset([0, -h * 0.12]);
+  globe.width(w).height(h).globeOffset([0, -h * (phone.matches ? 0.22 : 0.12)]);
 }
 fitGlobe();
 window.addEventListener('resize', fitGlobe);

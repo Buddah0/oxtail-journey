@@ -148,3 +148,40 @@ html, body {
   overflow-wrap: anywhere;
 }
 .credit { margin: 10px 0 0; color: var(--muted); font-size: 0.85rem; }
+
+/* ---------- Phones: card becomes a bottom sheet, arrows sit in its footer ---------- */
+@media (max-width: 640px) {
+  .topbar { padding: 12px 16px; }
+  .brand { font-size: 1rem; }
+  .progress {
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 26px;
+    z-index: 3;
+    text-align: center;
+    font-size: 0.9rem;
+  }
+
+  .card {
+    bottom: 0;
+    width: 100%;
+    max-height: 52vh;
+    padding: 16px 16px 84px; /* room for the footer arrows */
+    border-radius: 14px 14px 0 0;
+    border-bottom: none;
+  }
+  .card__title { font-size: 1.2rem; }
+  .card[data-kind='title'] .card__title { font-size: 1.7rem; }
+  .card__body { font-size: 0.95rem; }
+
+  .nav {
+    top: auto;
+    bottom: 14px;
+    width: 52px;
+    height: 52px;
+    font-size: 2rem;
+  }
+  .nav--prev { left: 16px; }
+  .nav--next { right: 16px; }
+}
