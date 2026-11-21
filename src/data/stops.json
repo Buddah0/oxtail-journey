@@ -1,0 +1,168 @@
+[
+  {
+    "id": "title",
+    "kind": "title",
+    "title": "An Oxtail’s Journey",
+    "subtitle": "From farm to fork",
+    "pov": { "lat": 20, "lng": -40, "altitude": 2.4 },
+    "autoRotate": true,
+    "countries": [],
+    "rings": [],
+    "arcs": []
+  },
+  {
+    "id": "farm",
+    "kind": "stop",
+    "title": "The Farm: where it starts",
+    "pov": { "lat": 38, "lng": -97, "altitude": 1.7 },
+    "autoRotate": false,
+    "countries": ["United States of America"],
+    "rings": [
+      { "lat": 31.0, "lng": -99.0, "label": "Texas" },
+      { "lat": 41.5, "lng": -99.8, "label": "Nebraska" },
+      { "lat": 38.5, "lng": -98.4, "label": "Kansas" }
+    ],
+    "arcs": [],
+    "bullets": [
+      { "text": "Retail oxtail for a 2024 national nutrient study came from processors in **Texas, Nebraska and Kansas**.", "cite": "(Fuerniss et al.)" },
+      { "text": "Each animal gives very little: USDA counts **0.24 lb of oxtail per 100 lb of live animal**.", "cite": "(“By-Product Drop Value”)" },
+      { "text": "That’s about **0.24% of live weight**, roughly 2.4 lb from a 1,000-lb steer.", "cite": "(Spies and Geyser)" }
+    ]
+  },
+  {
+    "id": "kill-floor",
+    "kind": "stop",
+    "title": "The Kill Floor: the “fifth quarter”",
+    "pov": { "lat": 41.6, "lng": -93.6, "altitude": 1.0 },
+    "autoRotate": false,
+    "countries": ["United States of America"],
+    "rings": [{ "lat": 41.5868, "lng": -93.625, "label": "Des Moines, IA (USDA Market News)" }],
+    "arcs": [],
+    "bullets": [
+      { "text": "The **fifth quarter** is “the non-carcass portion of a slaughtered animal”: hide, offal, tongue, **oxtail**.", "cite": "(Spies and Geyser)" },
+      { "text": "The industry spec (IMPS item **721**): a “skinned tail; removed at juncture of second and third coccygeal vertebrae … cut into segments.”", "cite": "(Fuerniss et al.)" },
+      { "text": "Nov. 20, 2026: oxtail sold at **$595 per 100 lb**, adding **$1.43** to the **$14.17 per 100 lb** hide-and-offal value of a typical steer, about a tenth of it.", "cite": "(“By-Product Drop Value”)" }
+    ]
+  },
+  {
+    "id": "south-africa",
+    "kind": "stop",
+    "title": "South Africa: oxtail on the shelf",
+    "pov": { "lat": -29, "lng": 24, "altitude": 1.6 },
+    "autoRotate": false,
+    "countries": ["South Africa"],
+    "rings": [],
+    "arcs": [],
+    "bullets": [
+      { "text": "The fifth quarter adds **about 5%** to an animal’s value, mostly kept by feedlots and abattoirs rather than farmers.", "cite": "(Spies and Geyser)" },
+      { "text": "Tongue and oxtail are the two fifth-quarter products sold at retail. Surveyed oxtail averaged **R112.87/kg**, “comparable to mid-priced carcass cuts.”", "cite": "(Spies and Geyser)" }
+    ]
+  },
+  {
+    "id": "many-kitchens",
+    "kind": "stop",
+    "title": "One cut, many kitchens",
+    "pov": { "lat": 25, "lng": -30, "altitude": 2.6 },
+    "autoRotate": true,
+    "countries": ["Cuba", "France", "Jamaica", "Vietnam", "China", "Mexico", "United States of America"],
+    "rings": [],
+    "arcs": [],
+    "bullets": [
+      { "text": "Oxtail is “one of the world of gastronomy’s most multicultural” meats, cooked by Cubans, French, Jamaicans, Vietnamese, Chinese, Mexicans and African Americans.", "cite": "(Prewitt)" },
+      { "text": "Oxtail stews are “cherished comfort foods” in African and Caribbean cuisines.", "cite": "(Silverberg)" },
+      { "text": "**Soul food:** culinary historian Adrian Miller calls cooking with “cast-off parts,” ox tails among them, a hallmark of soul food. The same article reports oxtail was “often given to enslaved Black Americans.”", "cite": "(Silverberg)" }
+    ]
+  },
+  {
+    "id": "diaspora",
+    "kind": "stop",
+    "title": "The Caribbean diaspora carries it north",
+    "pov": { "lat": 24, "lng": -70, "altitude": 1.5 },
+    "autoRotate": false,
+    "countries": ["Jamaica", "Guyana"],
+    "rings": [
+      { "lat": 40.6782, "lng": -73.9442, "label": "Brooklyn, NY" },
+      { "lat": 40.7673, "lng": -74.2049, "label": "East Orange, NJ" }
+    ],
+    "arcs": [
+      { "startLat": 18.11, "startLng": -77.3, "endLat": 40.6782, "endLng": -73.9442, "label": "Jamaica → Brooklyn" },
+      { "startLat": 4.86, "startLng": -58.93, "endLat": 40.7673, "endLng": -74.2049, "label": "Guyana → East Orange" }
+    ],
+    "bullets": [
+      { "text": "In Jamaica and Guyana, oxtail is “as common as coconut bread.”", "cite": "(Silverberg)" },
+      { "text": "**New Jersey:** a Guyanese immigrant who first lived in **East Orange** recalls local markets starting to sell oxtail “by the late seventies or early eighties.”", "cite": "(Jackson and London)" },
+      { "text": "**Brooklyn:** oxtail was once “almost a throwaway meat in New York.” Its price rose as Caribbean islanders settled in **Crown Heights and East Flatbush**.", "cite": "(Gill)" },
+      { "text": "2024: a Manhattan deli sells “at least 600” oxtail-stuffed patties a day.", "cite": "(Silverberg)" }
+    ]
+  },
+  {
+    "id": "price",
+    "kind": "stop",
+    "title": "From scrap to splurge: the price story",
+    "pov": { "lat": 46, "lng": -38, "altitude": 2.1 },
+    "autoRotate": false,
+    "countries": ["United States of America", "United Kingdom"],
+    "rings": [
+      { "lat": 40.7128, "lng": -74.006, "label": "New York City" },
+      { "lat": 52.5, "lng": -1.5, "label": "England" }
+    ],
+    "arcs": [],
+    "bullets": [
+      { "text": "2006, Brooklyn: a 15-lb box of frozen oxtail rose from about **$37 to $45** in a few months.", "cite": "(Gill)" },
+      { "text": "2015 → 2024: USDA’s average wholesale price went from **$5.99/lb to $14.19/lb**, “nearly tripled.”", "cite": "(Silverberg)" },
+      { "text": "Google searches for oxtail rose from a score of 6 (2004) to 73 (2024).", "cite": "(Silverberg)" },
+      { "text": "**Food insecurity:** in England, a participant in a 2026 study says mainstream supermarkets don’t carry her cultural foods, and “Oxtail is so expensive.”", "cite": "(Power and Baxter)" },
+      { "text": "Contrast: offal is “often more affordable than other beef cuts” and can help “resource-limited populations.”", "cite": "(Fuerniss et al.)" }
+    ]
+  },
+  {
+    "id": "nutrition",
+    "kind": "stop",
+    "title": "What’s in it: nutrition",
+    "pov": { "lat": 10, "lng": 20, "altitude": 2.6 },
+    "autoRotate": true,
+    "countries": [],
+    "rings": [],
+    "arcs": [],
+    "bullets": [
+      { "text": "Oxtail’s lean meat is an **“excellent source” of protein and zinc** and a **“good source” of iron and phosphorus**.", "cite": "(Fuerniss et al.)" },
+      { "text": "Raw oxtail lean is about **19.9% protein and 6.5% fat**, but a package is roughly **45% bone** by weight.", "cite": "(Fuerniss et al.)" }
+    ]
+  },
+  {
+    "id": "fork",
+    "kind": "stop",
+    "title": "Your fork",
+    "pov": { "lat": 40.77, "lng": -74.2, "altitude": 0.45 },
+    "autoRotate": false,
+    "countries": [],
+    "rings": [{ "lat": 40.7673, "lng": -74.2049, "label": "East Orange, NJ" }],
+    "arcs": [],
+    "bullets": [
+      { "text": "Oxtail is “more commonplace in the Northeastern US.”", "cite": "(Fuerniss et al.)" },
+      { "text": "Close to home: Caribbean demand put oxtail in **East Orange, NJ** markets by the late 1970s–early ’80s.", "cite": "(Jackson and London)" },
+      { "text": "[YOUR STORY GOES HERE: who cooks it, how it smells, tastes and feels. Write this part yourself.]", "placeholder": true }
+    ]
+  },
+  {
+    "id": "works-cited",
+    "kind": "works-cited",
+    "title": "Works Cited",
+    "pov": { "lat": 20, "lng": -40, "altitude": 2.6 },
+    "autoRotate": true,
+    "countries": [],
+    "rings": [],
+    "arcs": [],
+    "entries": [
+      "“By-Product Drop Value (Steers) (Cattle) (NW_LS441 / 447).” *My Market News*, United States Department of Agriculture, Agricultural Marketing Service, 20 Nov. 2026, mymarketnews.ams.usda.gov/viewReport/2829. Accessed 20 Nov. 2026.",
+      "Fuerniss, Hannah F., et al. “Nutrient Analysis of Raw United States Beef Offal Items.” *Nutrients*, vol. 16, no. 18, Sept. 2024. *PubMed Central*, https://doi.org/10.3390/nu16183104.",
+      "Gill, John Freeman. “Mouths Water for a Treat Turned Scarce.” *The New York Times*, late ed., 17 Dec. 2006, sec. 14, p. 7. *ProQuest*, www.proquest.com/newspapers/mouths-water-treat-turned-scarce/docview/433457897/se-2.",
+      "Jackson, Shona N., and Evelyn London. “Perfecting Habit: Guyana Callaloo and the Migration of ‘Poor People’s Food’: An Interview with Evelyn London.” *Callaloo*, vol. 30, no. 1, Winter 2007, pp. 316–21. *JSTOR*, www.jstor.org/stable/30135923.",
+      "Power, Maddy, and Madeleine Baxter. “Lived Experiences of Food Insecurity and Mental Health: The Role of Socio-Demographic Inequalities.” *BMC Public Health*, vol. 26, no. 1, 2026. *ProQuest*, https://doi.org/10.1186/s12889-026-28006-8.",
+      "Prewitt, Milford. “The Oxtail Incident: Multicultural Meat Makes Its Mark on Menus.” *Nation’s Restaurant News*, vol. 31, no. 37, 15 Sept. 1997, p. 33. *ProQuest*, www.proquest.com/trade-journals/oxtail-incident-multicultural-meat-makes-mark-on/docview/229325778/se-2.",
+      "Silverberg, David. “Oxtail Was Once Considered Undesirable. Now Prices Are Soaring.” *Agriculture Dive*, 26 Aug. 2024, p. 1. *Academic Search Ultimate*, search.ebscohost.com/login.aspx?direct=true&AuthType=shib&custid=njitinf&db=asn&AN=179387427&site=ehost-live.",
+      "Spies, David, and Mariette Geyser. “Valorising the Fifth Quarter in a Circular Economy: By-Product Value, Margins and Producer Share in the South African Beef Value Chain.” *Agriculture*, vol. 16, no. 20, 2026. *ProQuest*, https://doi.org/10.3390/agriculture16202287."
+    ],
+    "credit": "Globe textures: example images from the three-globe project (MIT License)."
+  }
+]
