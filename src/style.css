@@ -11,7 +11,13 @@
 html, body {
   margin: 0;
   height: 100%;
+  overflow: hidden;
   background: var(--bg);
   color: var(--ink);
   font-family: Georgia, 'Times New Roman', serif;
+}
+
+.globe {
+  position: fixed;
+  inset: 0;
 }
